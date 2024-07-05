@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body{
+        background-color: rgb(129, 112, 112);
+     
+      }
+      h1{
+        margin-top: 18%;
+        font-size: 110px;
+        font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  
+  margin-left: 7%;
+      }
+      .first{
+        
+        margin-left: 20%;
+      }
+      .para{
+        margin-top: -5%;
+      }
+     .second{
+        margin-left: 60%;
+     }
+     .pic{
+        margin-top: -40%;
+        margin-left: 8%;
+     }
+     .h1
+    {
+        font-size: 40px;
+        margin-left: 0%;
+    }
+    .line{
+        background-color: black;
+    }
+    .third{
+        background-image: url('img/code.jpg');
+        color: aliceblue;
+        background-repeat: no-repeat;
+        background-size: cover;
+      padding-bottom: 10%;
+      margin: -8px;
+      padding-top: 4%;
+    }
+    .head{
+        font-size: 50px;
+        color: aliceblue;
+        margin-left: 5%;
+       
+    }
+    
+    .grp{
+        margin-left: 5%;
+        max-width: 90vh;
+    }
+    .navbar nav{
+    background-color: darkgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: -8px;
+    padding: 6px 0px;
+ 
+   }
+   .navbar .logo{
+    margin-left: 4%;
+   }
+   .navbar ul li{
+    display: inline-block;
+   }
+   .navbar ul li a{
+    text-decoration: none;
+    margin: 5px 24px;
+    font-size: 20px;
+    color: #000000;
+    
+   }
+   .btn{
+    border: none;
+    margin-right: 4%;
+    padding: 7px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: rgba(224, 157, 56, 0.836);
+   }
+   .navbar ul li a:hover{
+    color: rgb(206, 120, 49);
+   }
+   .btn:hover{
+    background-color: rgb(206, 120, 49);
+    color: #e7f4e2;
+   }
+   .btun{
+    border: none;
+    margin-left: 5%;
+    padding: 7px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: rgba(224, 157, 56, 0.836);
+   }
+   .btun:hover{
+    background-color: rgb(206, 120, 49);
+    color: #e7f4e2;
+   }
+   .forth
+   {
+   text-align: center;
+margin-top: -10%;
+   }
+   .forth h1{
+    font-size: 45px;
+   }
+   .fifth{
+    padding-bottom: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    color: #e7f4e2;
+   }
+   .fifth span{
+    font-size: 60px;
+} .checkbutton{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+   }
+   .mycheckbox{
+    display: none;
+   }
+   @media screen and (max-width:991px) {
+    .pic{
+        width: 430px;
+        height: 300px;
+        margin-left: -2%;
+    }
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 12px;
+    }
+    .third{
+        background-size: 1000px 630px ;
+    }
+    .third p{
+        max-width: 100vh;
+    }
+    .fifth{
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+}
+   @media screen and (max-width:858px){
+    
+    .navbar .logo {
+        margin-left: -29%;
+        width: 130px;
+        height: 61px;
+}
+    .third{
+        background-size: 903px 650px;
+    }
+    .third p{
+        max-width: 72vh;
+    }
+    .fifth{
+        justify-content: space-evenly;
+        text-align: center;
+    }
+    .pic{
+        width: 760px;
+        height: 262px;
+        margin-left: -2%;
+        margin-top: 6%;
+    }
+    .checkbutton{
+    display: block;
+     margin-left: 20px;
+  }
+  ul{
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    background-color: darkgray;
+    top: 70px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+   
+  }
+  nav ul li{
+    display: block;
+    margin: 20px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+    color: #000000;
+  }
+  a:hover,a.active{
+    color: #a07e7e;
+  }
+  .mycheckbox:checked ~ ul{
+   left: 0;
+  }
+  .first h1{
+    margin-left: -12%;
+  }
+  .first p{
+    margin-top: -7%;
+  }
+  .second {
+    margin-left: 10%;
+        margin-top: 10%;
+        max-width: 70vh;
+  }
+  .second .para{
+    padding-top: 5%;
+  }
+  
+  
+}
+
+  @media screen and (max-width:767px){
+    
+    .forth p{
+        max-width: 55vh;
+        text-align: center;
+        margin-left: 16%;
+    }
+    .head{
+        font-size: 39px;
+    color: aliceblue;
+    margin-left: 4%;
+    }
+    .first h1{
+        margin-left: -18%;
+        font-size: 97px;
+  }
+  .first p{
+    margin-top: -11%;
+        margin-left: -17%;
+  }
+  .second {
+    margin-left: 6%;
+        margin-top: 10%;
+        max-width: 70vh;
+  }
+  .second .para{
+    padding-top: 5%;
+  }
+  .third{
+    background-size: 468px 553px;
+    }
+    .third p{
+        max-width: 52vh;
+    }
+    .fifth{
+        justify-content: space-evenly;
+        text-align: center;
+    }
+    .forth h1 {
+        font-size: 39px;
+    }
+    .pic{
+        width: 499px;
+        height: 262px;
+        margin-left: -9%;
+        margin-top: 6%;
+    }
+    
+     .checkbutton{
+    display: block;
+     margin-left: 8px;
+  }
+  ul{
+    position: fixed;
+    width: 35%;
+    height: 100%;
+    background-color: darkgray;
+    top: 70px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+   
+  }
+  nav ul li{
+    display: block;
+    margin: 20px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+    color: #000000;
+  }
+  .fifth span{
+    font-size: 35px;
+  }
+  .fifth p{
+    font-size: 13px;
+  }
+  
+}
+@media screen and (max-width:692px){
+    
+    .fifth span{
+        font-size: 28px;
+  }
+  .fifth p{
+    font-size: 11px;
+  }.forth p{
+        max-width: 55vh;
+        text-align: center;
+        margin-left: 16%;
+    }
+    .head{
+        font-size: 33px;
+    color: aliceblue;
+    margin-left: 4%;
+    }
+    .first h1{
+        margin-left: -18%;
+        font-size: 78px;
+  }
+  .first p{
+    margin-top: -11%;
+        margin-left: -17%;
+        max-width: 41vh;
+  }
+  .second {
+    margin-left: 6%;
+        margin-top: 10%;
+        max-width: 70vh;
+  }
+  .second .para{
+    padding-top: 5%;
+  }.third{
+    background-size: 412px 569px;
+    margin: -8px;
+    }
+    .third p{
+        max-width: 32vh;
+    }
+    .fifth{
+        justify-content: space-evenly;
+        text-align: center;
+    }
+    .forth h1 {
+        font-size: 39px;
+    }
+    .pic{
+        width: 442px;
+        height: 262px;
+        margin-left: -9%;
+        margin-top: 6%;
+    }
+    .btn{
+        padding: 7px;
+    }
+
+}
+  
+    
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+    <nav>
+        <input type="checkbox" class="mycheckbox" id="mycheck">
+            <label for="mycheck" class="checkbutton">
+                <i class="fa fa-bars"></i>
+            </label>
+        <img class="logo" src="img/logo3.png" alt="" width="190px" height="40px">
+        <ul>
+            <li><a href="codevirt.html">Home</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+            <li><a href="internship.html">Internships</a></li>
+            
+        </ul>
+        <button class="btn"onclick="document.location='https://docs.google.com/forms/d/e/1FAIpQLSfzawYDhY8m3zhZZCrJKnO80HF4K4kLIoCIFA-v_Pk_Q_j3iA/viewform?usp=sharing</a>'">Apply Now</button>
+    </nav>
+</div>
+    
+    <div class="first">
+        <h1>About  Us.</h1>
+        <p class="para">"At <span>CodeVirt</span> we believe practical knowledge is the key  to <br> success in  the tech industry. Our aim is to help students <br>lacking  basic  skills by offering hands-on learning through <br>live projects and real-world examples".</p>
+    </div>
+ <div class="second">
+    <h2>Who we are?</h2>
+    <p>"<span>CodeVirt</span> are IT services and IT consultancy that specializes in creating innovative solutions for businesses. We are passionate about technology and believe in the power of software to transform the world. Our internship program is just one of the ways in which we are investing in the future of the industry"</p>
+ </div>
+ <div class="second">
+    <h2 class="hd">What we offer?</h2>
+    <p class="para">"CodeVirt specializes in virtual internships focused on programming languages such as Java, C++, and Python. Our platform connects aspiring programmers with hands-on opportunities to gain practical experience in these languages. Whether you're interested in developing software applications, exploring data science with Python, or diving into the intricacies of object-oriented programming with Java and C++, CodeVirt provides a structured learning environment supported by industry mentors. Join us to enhance your programming skills and prepare for a successful career in software development and beyond."</p>
+ </div>
+ <img class="pic" src="img/pic2-removebg-preview.png" alt="" height="300px" width="600px">
+ <br>
+  <hr class="line">
+  <br>
+  <div class="third">
+    
+    <h1 class="head">Collaborate with the <br> Best</h1>
+    
+    <p class="grp">At CodeVirt, we believe that collaboration is the key to success.  Our internship program is  designed to help you build lifelong <br>relationships with fellow interns, mentors, and industry experts. We're <br> proud to have a diverse community of passionate  individuals  who are <br> committed to pushing the boundaries of technology.</p> 
+    <button class="btun"onclick="document.location='https://docs.google.com/forms/d/e/1FAIpQLSfzawYDhY8m3zhZZCrJKnO80HF4K4kLIoCIFA-v_Pk_Q_j3iA/viewform?usp=sharing</a>'">Apply now</button>
+  </div>
+  <hr>
+  <div class="forth">
+     <h1>Our Growing Online Community</h1>
+     <p>"Connect with a community of individuals who share your vision, unlocking boundless <br> opportunities and fostering personal growth as you pursue success."</p>
+  </div>
+  <div class="fifth">
+    <p><span>200k+</span><br>LinkedIn community</p>
+    <p><span>50k+</span><br>Telegram community</p>
+<p><span>10k+</span><br>Instagram community</p>
+<p><span>5k+</span><br>Facebook community</p>
+  </div>
+  <hr>
+  
+</body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+ body{
+    background-color: rgb(129, 112, 112);
+ }
+   .nothing{
+      margin-top: 300px;
+      display: flex;
+     flex-wrap:nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+   }
+   .card{
+      width: 324px;
+      margin: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0,0, 0.2);
+     transition: transform 0.2s ease;
+   }
+   .card:hover{
+      transform: scale(1.05);
+    }
+    .card-image{
+      width: 100%;
+    }
+   .card-image img{
+     
+      width: 300px;
+   }
+   
+   .content{
+      padding: 20px;
+    }
+    .content h3{
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: black;
+    }
+    .content p{
+      font-size: 16px;
+      margin-bottom: 0px;
+      color: black;
+    }
+    .content .button{
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: rgb(206, 120, 49);
+      color: aliceblue;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: 0.3s ease;
+      margin-top: 20px;
+      border: none;
+      transition: transform 0.2s ease;
+  }
+  .content .button:hover{
+   background-color: rgb(167, 124, 68);
+  }
+  .head{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 17%;
+    color: wheat;
+    text-transform: uppercase;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  .navbar nav{
+    background-color: darkgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: -8px;
+    padding: 6px 0px;
+ 
+   }
+   .navbar .logo{
+    margin-left: 4%;
+   }
+   .navbar ul li{
+    display: inline-block;
+   }
+   .navbar ul li a{
+    text-decoration: none;
+    margin: 5px 30px;
+    font-size: 20px;
+    color: #000000;
+    
+   }
+   .btn{
+    border: none;
+    margin-right: 4%;
+    padding: 7px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: rgba(224, 157, 56, 0.836);
+   }
+   .navbar ul li a:hover{
+    color: rgb(206, 120, 49);
+    
+   }
+   .btn:hover{
+    background-color: rgb(206, 120, 49);
+    color: #e7f4e2;
+   }
+   .athr{
+    margin-left: 45px;
+   }
+   .checkbutton{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+   }
+   .mycheckbox{
+    display: none;
+   }
+   @media screen and (max-width:692px){
+    
+    
+  
+    .btn{
+        padding: 7px;
+    }
+    .checkbutton{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+   }
+   .mycheckbox{
+    display: none;
+   }
+   .nothing{
+    min-width: 50%;
+    display: flex;
+    flex-direction:column ;
+}
+.button {
+        margin-left: 64px;
+    }
+
+}
+@media screen and (max-width:767px){
+
+    .card-image img {
+        width: 195px;
+    }
+    .card {
+        width: 160px;
+        margin: 6px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        transition: transform 0.2s ease;
+    }.content {
+    padding: 7px;
+}
+    .checkbutton{
+    display: block;
+    margin-left: 8px;
+  }
+  ul{
+    position: fixed;
+    width: 35%;
+    height: 100%;
+    background-color: darkgray;
+    top: 70px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+   
+  }
+  nav ul li{
+    display: block;
+    margin: 20px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+    color: #000000;
+  }
+  .nothing{
+    min-width: 50%;
+    display: flex;
+    flex-direction:column ;
+}
+.athr {
+    margin-left: 65px;
+    }
+ }
+ @media screen and (max-width:858px){
+    
+    .navbar .logo {
+        margin-left: -29%;
+        width: 130px;
+        height: 61px;
+}.checkbutton{
+    display: block;
+    margin-left: 8px;
+  }
+  ul {
+        position: fixed;
+        width: 43%;
+        height: 100%;
+        background-color: darkgray;
+        top: 70px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+        display: flex;
+        flex-direction: column;
+    }
+  nav ul li{
+    display: block;
+    margin: 20px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+    color: #000000;
+    display: block;
+       
+    }
+  }
+  a:hover,a.active{
+    color: #a07e7e;
+  }
+  .mycheckbox:checked ~ ul{
+   left: 0;
+  }
+  .card-image img {
+    width: 289px;
+    height: 122px;
+}
+.athr {
+    margin-left: 50px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    margin: 5px 24px;
+    font-size: 20px;
+    color: #000000;
+    
+
+}
+@media screen and (max-width:991px) {
+
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 12px;
+    }
+    .nothing {
+    margin-top: 212px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card-image img {
+    width: 246px;
+}
+content {
+    padding: 10px;
+}
+.card {
+    width: 270px;
+    margin: 6px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <input type="checkbox" class="mycheckbox" id="mycheck">
+            <label for="mycheck" class="checkbutton">
+                <i class="fa fa-bars"></i>
+            </label>
+            <img class="logo" src="img/logo3.png" alt="" width="190px" height="40px">
+            <ul>
+                <li><a href="codevirt.html">Home</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="internship.html">Internships</a></li>
+                
+            </ul>
+            <button class="btn"onclick="document.location='https://docs.google.com/forms/d/e/1FAIpQLSfzawYDhY8m3zhZZCrJKnO80HF4K4kLIoCIFA-v_Pk_Q_j3iA/viewform?usp=sharing</a>'">Apply Now</button>
+        </nav>
+    </div>
+    <h1 class="head">We offer following internships</h1>
+    <div class="nothing">
+        <div class="card">
+           <div class="card-image">
+              <img src="img/c++.png" alt="" >
+           </div>
+           <div class="content">
+              <h3>c++</h3>
+              <p>Explore the power and performance of C++ programming with our internship at CodeVirt. </p>
+              <button class="button"onclick="document.location='https://docs.google.com/forms/d/e/1FAIpQLSfzawYDhY8m3zhZZCrJKnO80HF4K4kLIoCIFA-v_Pk_Q_j3iA/viewform?usp=sharing</a>'">Apply Now</button>
+           </div>
+        </div>
+        <div class="card">
+           <div class="card-image">
+              <img src="img/Java.png" alt="" height="230px">
+           </div>
+           <div class="content">
+              <h3>Java</h3>
+              <p>Join our Java internship program at CodeVirt to delve into the world of robust and scalable software development. </p>
+              <button class="button"onclick="document.location='https://docs.google.com/forms/d/e/1FAIpQLSfzawYDhY8m3zhZZCrJKnO80HF4K4kLIoCIFA-v_Pk_Q_j3iA/viewform?usp=sharing</a>'">Apply Now</button>
+           </div>
+        </div>
+        <div class="card">
+           <div class="card-image">
+              <img src="img/python.png" alt=""height="230px">
+           </div>
+           <div class="content">
+              <h3>Python</h3>
+              <p>Dive into the dynamic world of Python programming with our internship at CodeVirt. </p>
+              <button class="button"onclick="document.location='https://docs.google.com/forms/d/e/1FAIpQLSfzawYDhY8m3zhZZCrJKnO80HF4K4kLIoCIFA-v_Pk_Q_j3iA/viewform?usp=sharing</a>'">Apply Now</button>
+           </div>
+        </div>
+      </div>
+      <div class="athr">
+
+          <div class="card">
+            <div class="card-image">
+               <img src="img/designing.jpg" alt=""height="230px">
+            </div>
+            <div class="content">
+               <h3>Graphic designing</h3>
+               <p>Embark on a creative journey with our Graphic Designing internship at CodeVirt.  </p>
+               <button class="button"onclick="document.location='https://docs.google.com/forms/d/e/1FAIpQLSfzawYDhY8m3zhZZCrJKnO80HF4K4kLIoCIFA-v_Pk_Q_j3iA/viewform?usp=sharing</a>'">Apply Now</button>
+            </div>
+         </div>
+      </div>
+</body>
+</html>

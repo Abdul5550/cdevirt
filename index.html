@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            background-color: rgba(129, 112, 112);
+        }
+   .first nav{
+    background-color: darkgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: -8px;
+    padding: 6px 0px;
+ 
+   }
+   .first .logo{
+    margin-left: 4%;
+   }
+   .first ul li{
+    display: inline-block;
+   }
+   .first ul li a{
+    text-decoration: none;
+    margin: 5px 24px;
+    font-size: 20px;
+    color: #000000;
+    
+    
+   }
+   .btn{
+    border: none;
+    margin-right: 4%;
+    padding: 7px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: rgba(224, 157, 56, 0.836);
+   }
+   .first ul li a:hover{
+    color: rgb(206, 120, 49);
+    
+   }
+   .btn:hover{
+    background-color: rgb(206, 120, 49);
+    color: #e7f4e2;
+   }
+   .pic{
+    margin-left: 60%;
+    height: 300px;
+    width: 500px;
+    margin-top: 8%;
+    
+   }
+   .second{
+    margin-top: -19%;
+    margin-left: 2%;
+    
+   }
+   .third{
+    margin-left: 50% ;
+    margin-top: -15%;
+    
+   }
+   .pic2{
+    margin-top: 6%;
+   }
+   .second h1{
+ font-size: 40px;
+   }
+   .Forth{
+    background-color: darkgray;
+    margin-top: 14%;
+    font-size:20px ;
+    padding: 40px 40px;
+}
+   .Forth span{
+    font-weight: bold;
+   }
+   .fa-brands{
+    font-size: 50px;
+    padding: 0px 13px;
+   }
+   .lbl
+   {
+    padding-left: 20px;
+   }
+   .forth{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: darkgray;
+    margin-top: 10%;
+    padding: 7% 0;
+    margin: -8px;
+   }
+   .forth h2{
+    font-size: 30px;
+   }
+   .hd{
+    text-align: center;
+    font-size: 60px;
+   }
+
+   .checkbutton{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+   }
+   .mycheckbox{
+    display: none;
+   }
+   @media screen and (max-width:991px) {
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 12px;
+    }
+.pic{
+    width: 300px;
+    height: 200px;
+  
+    
+}
+.second h1{
+    font-size: 33px;
+}
+.second p{
+    max-width: 70vh;
+}
+   }
+   @media screen and (max-width:858px){
+  
+    .first .logo {
+        margin-left: -29%;
+        width: 117px;
+        height: 56px;
+}  .checkbutton{
+    display: block;
+     margin-left: 20px;
+  }
+  ul{
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    background-color: darkgray;
+    top: 70px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+   
+  }
+  nav ul li{
+    display: block;
+    margin: 20px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+    color: #000000;
+  }
+  a:hover,a.active{
+    color: #a07e7e;
+  }
+  .mycheckbox:checked ~ ul{
+   left: 0;
+  }
+  .pic{
+    height: 200px;
+    width: 400px;
+   
+  }
+  .pic2{
+    width: 50%;
+    height: auto;
+  }
+  .second p{
+    max-width: 60vh;
+  }
+  .second h1{
+    font-size: 30px;
+  }
+  .third p{
+    margin-top: -20%;
+     }
+     .hd{
+        font-size: 48px;
+     }
+   }
+   @media screen and (max-width:767px){
+    .forth .foo{
+        margin-left: 6px;
+    }
+    .forth h2{
+    font-size: 26px;
+  }.pic{
+       width: 400px;
+       height: 180px;
+       margin-left: -1%;
+    }
+    .second{
+       margin-top: 0%;
+     }
+     .checkbutton{
+    display: block;
+    margin-left: 8px;
+  }
+  ul{
+    position: fixed;
+    width: 35%;
+    height: 100%;
+    background-color: darkgray;
+    top: 70px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+   
+  }
+  nav ul li{
+    display: block;
+    margin: 20px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+    color: #000000;
+  }
+  .pic2{
+    width: 350px;
+    height: 200px;
+}
+.third{
+    margin-top: 25%;
+    margin-left: -1%;
+}
+.forth{
+    gap: 11px;
+}
+.fa-brands{
+    font-size: 30px;
+    padding: 0px 3px;
+   }
+   .forth p{
+ font-size: 10px;
+   }
+   .forth .lbl{
+    font-size: 13px;
+   }
+}
+
+   
+   
+   
+    </style>
+</head>
+<body>
+    <div class="first">
+        <nav>
+            <input type="checkbox" class="mycheckbox" id="mycheck">
+            <label for="mycheck" class="checkbutton">
+                <i class="fa fa-bars"></i>
+            </label>
+            <img class="logo" src="img/logo3.png" alt="" width="190px" height="40px">
+            <ul  class="sidebar">
+                <li><a href="codevirt.html" class="active">Home</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="nternship.html">Internships</a></li>
+                
+            </ul>
+            <button class="btn" onclick="document.location='https://docs.google.com/forms/d/e/1FAIpQLSfzawYDhY8m3zhZZCrJKnO80HF4K4kLIoCIFA-v_Pk_Q_j3iA/viewform?usp=sharing</a>'">Apply Now</button>
+        </nav>
+    </div>
+    <img class="pic" src="img/coding_boy.svg" alt="">
+    <div class="second">
+        <h1>Take Your Career to the Next Level <br>with CodVirt</h1>
+        <p>Start your journey to becoming a proficient programmer today with CodeVirt. Explore our <br> internship opportunities and unlock your potential in the world of tech innovation.  Embrace the <br> virtual internship experience with CodeVirt – where coding meets opportunity.</p>
+        <button class="btn"onclick="document.location='https://docs.google.com/forms/d/e/1FAIpQLSfzawYDhY8m3zhZZCrJKnO80HF4K4kLIoCIFA-v_Pk_Q_j3iA/viewform?usp=sharing</a>'">Apply Now</button>
+    </div>
+    <img class="pic2" src="img/boy.png" alt="" height="300px" width="500px">
+    <div class="third">
+        <p>At CodeVirt, we believe in learning by doing. Our internships are designed to be flexible,<br> allowing you to balance your  education or current job commitments while gaining practical,<br> resume-enhancing experience.  Join a vibrant community of learners and professionals <br> who share your passion for coding and  advancement in the digital age.Gain invaluable experience working remotely with industry mentors  who guide you through cutting-edge technologies and industry best practices.</p>
+    </div><br><br><br><br> <br><hr>
+    <h1 class="hd">Unlock Your Full Potential with <br> CodVirt</h1>
+    <div class="forth">
+        <div class="foo">
+            <h2>Code Virt</h2>
+            <p >We work with a passion of taking <br>challenges and creating new ones in <br>advertising sector.</p>
+            <p>contact us through our social media platforms :</p>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div>
+            <h2>Contact Us</h2>
+            <p>you can contact us through our social <br> media platform and also through <br>the following:</p>
+            <i class="fa-solid fa-phone"></i><label class="lbl" for="">+92 1234566778</label><br>
+            <i class="fa-solid fa-envelope"></i><label class="lbl" for="">abcd12@gmail.com</label>
+        </div>
+    </div>
+    
+</body>
+</html>
